@@ -123,3 +123,20 @@
 [NX Daemon Server] - 2024-09-11T08:33:03.288Z - Done responding to the client handleContextFileData
 [NX Daemon Server] - 2024-09-11T08:33:03.288Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
 [NX Daemon Server] - 2024-09-11T08:33:05.485Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-11T08:34:08.045Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-11T08:34:08.046Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-11T08:34:08.046Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-11T08:34:08.047Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-09-11T08:34:08.048Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-09-11T08:34:08.049Z - Time taken for 'total for creating and serializing project graph' 0.14949999749660492ms
+[NX Daemon Server] - 2024-09-11T08:34:08.051Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-09-11T08:34:08.051Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX Daemon Server] - 2024-09-11T08:34:08.054Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-09-11T08:34:08.054Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-09-11T08:34:08.054Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-09-11T08:34:10.239Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-11T08:34:38.196Z - [WATCHER]: .gitignore was modified
+[NX Daemon Server] - 2024-09-11T08:34:38.197Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-11T08:34:38.197Z - [WATCHER]: Stopping the watcher for /Users/gymd/myStudy/cli-study/getting-started-example (sources)
+[NX Daemon Server] - 2024-09-11T08:34:38.197Z - [WATCHER]: Stopping the watcher for /Users/gymd/myStudy/cli-study/getting-started-example (outputs)
+[NX Daemon Server] - 2024-09-11T08:34:38.199Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
