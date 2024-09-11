@@ -1,27 +1,153 @@
 0 silly argv {
-0 silly argv   _: [ 'version' ],
-0 silly argv   private: false,
+0 silly argv   _: [ 'publish' ],
+0 silly argv   registry: 'https://registry.npmjs.org',
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '8.1.8',
 0 silly argv   '$0': 'lerna'
 0 silly argv }
 1 notice cli v8.1.8
 2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
 3 verbose rootPath /Users/gymd/myStudy/cli-study/getting-started-example
-4 info current version 0.0.0
-5 silly isAnythingCommitted
-6 verbose isAnythingCommitted 1
-7 silly getCurrentBranch
-8 verbose currentBranch main
-9 silly remoteBranchExists
-10 silly isBehindUpstream
-11 error Error: Command failed with exit code 1: git remote update
-11 error fatal: unable to access 'https://github.com/lerna/getting-started-example.git/': Failure when receiving data from the peer
-11 error error: could not fetch old-origin
-11 error Fetching old-origin
-11 error Fetching origin
-11 error     at makeError (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/execa/lib/error.js:59:11)
-11 error     at module.exports.sync (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/execa/index.js:186:17)
-11 error     at Object.execSync (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:1579:31)
-11 error     at updateRemote (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:9196:18)
-11 error     at isBehindUpstream (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:9186:3)
-11 error     at VersionCommand.initialize (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:9477:57)
+4 verbose session 96dabed6ca1ab4c4
+5 verbose user-agent lerna/8.1.8/node@v18.18.0+arm64 (darwin)
+6 silly argv {
+6 silly argv   _: [ 'publish' ],
+6 silly argv   registry: 'https://registry.npmjs.org',
+6 silly argv   composed: 'publish',
+6 silly argv   lernaVersion: '8.1.8'
+6 silly argv }
+7 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+8 verbose rootPath /Users/gymd/myStudy/cli-study/getting-started-example
+9 info current version 0.0.2
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch main
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 1
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v0.0.2-1-gdfc7686" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"dfc7686","isDirty":false}
+20 info Looking for changed packages since v0.0.2
+21 silly checking diff packages/footer
+22 silly found diff in packages/footer/package.json
+23 verbose filtered diff [ 'packages/footer/package.json' ]
+24 silly checking diff packages/header
+25 silly found diff in packages/header/package.json
+26 verbose filtered diff [ 'packages/header/package.json' ]
+27 silly checking diff packages/remixapp
+28 silly no diff found in remixapp
+29 verbose updated @zifeiyu666/footer
+30 verbose updated @zifeiyu666/header
+31 verbose updated remixapp
+32 verbose git-describe undefined => "v0.0.2-1-gdfc7686"
+33 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"dfc7686","isDirty":false}
+34 info execute Skipping releases
+35 silly lifecycle No script for "preversion" in "root", continuing
+36 silly lifecycle No script for "preversion" in "@zifeiyu666/footer", continuing
+37 silly lifecycle No script for "preversion" in "@zifeiyu666/header", continuing
+38 silly lifecycle No script for "version" in "@zifeiyu666/footer", continuing
+39 silly lifecycle No script for "version" in "@zifeiyu666/header", continuing
+40 silly lifecycle No script for "preversion" in "remixapp", continuing
+41 silly lifecycle No script for "version" in "remixapp", continuing
+42 silly lifecycle No script for "version" in "root", continuing
+43 verbose version Updating root package-lock.json
+44 silly gitAdd [
+44 silly gitAdd   'packages/footer/package.json',
+44 silly gitAdd   'packages/footer/package-lock.json',
+44 silly gitAdd   'packages/header/package.json',
+44 silly gitAdd   'packages/header/package-lock.json',
+44 silly gitAdd   'packages/remixapp/package.json',
+44 silly gitAdd   'packages/remixapp/package-lock.json',
+44 silly gitAdd   'lerna.json',
+44 silly gitAdd   'package-lock.json'
+44 silly gitAdd ]
+45 silly gitCommit v0.0.3
+46 verbose git [ 'commit', '-m', 'v0.0.3' ]
+47 silly gitTag v0.0.3 git tag %s -m %s
+48 verbose git [ 'tag', 'v0.0.3', '-m', 'v0.0.3' ]
+49 silly lifecycle No script for "postversion" in "@zifeiyu666/footer", continuing
+50 silly lifecycle No script for "postversion" in "@zifeiyu666/header", continuing
+51 silly lifecycle No script for "postversion" in "remixapp", continuing
+52 silly lifecycle No script for "postversion" in "root", continuing
+53 info git Pushing tags...
+54 silly gitPush origin main
+55 info publish Publishing packages to npm...
+56 notice Skipping all user and access validation due to third-party registry
+57 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+58 warn ENOLICENSE Packages @zifeiyu666/footer and @zifeiyu666/header are missing a license.
+58 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+58 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+59 silly getCurrentSHA
+60 verbose getCurrentSHA a773d91f6226339e36b9d0cd58bb3915d1450ca0
+61 silly lifecycle No script for "prepublish" in "root", continuing
+62 silly lifecycle No script for "prepare" in "root", continuing
+63 silly lifecycle No script for "prepublishOnly" in "root", continuing
+64 silly lifecycle No script for "prepack" in "root", continuing
+65 verbose pack-directory packages/footer
+66 silly lifecycle No script for "prepublish" in "@zifeiyu666/footer", continuing
+67 verbose pack-directory packages/header
+68 silly lifecycle No script for "prepublish" in "@zifeiyu666/header", continuing
+69 silly lifecycle No script for "prepare" in "@zifeiyu666/footer", continuing
+70 silly lifecycle No script for "prepare" in "@zifeiyu666/header", continuing
+71 silly lifecycle No script for "prepublishOnly" in "@zifeiyu666/footer", continuing
+72 silly lifecycle No script for "prepublishOnly" in "@zifeiyu666/header", continuing
+73 silly lifecycle No script for "prepack" in "@zifeiyu666/footer", continuing
+74 silly lifecycle No script for "prepack" in "@zifeiyu666/header", continuing
+75 silly lifecycle No script for "postpack" in "@zifeiyu666/footer", continuing
+76 verbose packed packages/footer
+77 silly lifecycle No script for "postpack" in "@zifeiyu666/header", continuing
+78 verbose packed packages/header
+79 silly lifecycle No script for "postpack" in "root", continuing
+80 verbose publish @zifeiyu666/footer
+81 verbose publish @zifeiyu666/header
+82 silly FetchError: request to https://registry.npmjs.org/@zifeiyu666%2ffooter failed, reason: connect ETIMEDOUT 104.16.2.35:443
+82 silly     at ClientRequest.<anonymous> (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/minipass-fetch/lib/index.js:130:14)
+82 silly     at ClientRequest.emit (node:events:517:28)
+82 silly     at _destroy (node:_http_client:882:13)
+82 silly     at onSocketNT (node:_http_client:902:5)
+82 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+82 silly  FetchError: request to https://registry.npmjs.org/@zifeiyu666%2ffooter failed, reason: connect ETIMEDOUT 104.16.2.35:443
+82 silly     at ClientRequest.<anonymous> (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/minipass-fetch/lib/index.js:130:14)
+82 silly     at ClientRequest.emit (node:events:517:28)
+82 silly     at _destroy (node:_http_client:882:13)
+82 silly     at onSocketNT (node:_http_client:902:5)
+82 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+82 silly   code: 'ETIMEDOUT',
+82 silly   errno: 'ETIMEDOUT',
+82 silly   syscall: 'connect',
+82 silly   address: '104.16.2.35',
+82 silly   port: 443,
+82 silly   type: 'system'
+82 silly }
+83 warn notice Package failed to publish: @zifeiyu666/footer
+84 error ETIMEDOUT request to https://registry.npmjs.org/@zifeiyu666%2ffooter failed, reason: connect ETIMEDOUT 104.16.2.35:443
+85 error errno "ETIMEDOUT" is not a valid exit code - exiting with code 1
+86 silly FetchError: request to https://registry.npmjs.org/@zifeiyu666%2fheader failed, reason: connect ETIMEDOUT 104.16.2.35:443
+86 silly     at ClientRequest.<anonymous> (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/minipass-fetch/lib/index.js:130:14)
+86 silly     at ClientRequest.emit (node:events:517:28)
+86 silly     at _destroy (node:_http_client:882:13)
+86 silly     at onSocketNT (node:_http_client:902:5)
+86 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+86 silly  FetchError: request to https://registry.npmjs.org/@zifeiyu666%2fheader failed, reason: connect ETIMEDOUT 104.16.2.35:443
+86 silly     at ClientRequest.<anonymous> (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/minipass-fetch/lib/index.js:130:14)
+86 silly     at ClientRequest.emit (node:events:517:28)
+86 silly     at _destroy (node:_http_client:882:13)
+86 silly     at onSocketNT (node:_http_client:902:5)
+86 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+86 silly   code: 'ETIMEDOUT',
+86 silly   errno: 'ETIMEDOUT',
+86 silly   syscall: 'connect',
+86 silly   address: '104.16.2.35',
+86 silly   port: 443,
+86 silly   type: 'system'
+86 silly }
+87 warn notice Package failed to publish: @zifeiyu666/header
+88 error ETIMEDOUT request to https://registry.npmjs.org/@zifeiyu666%2fheader failed, reason: connect ETIMEDOUT 104.16.2.35:443
+89 error errno "ETIMEDOUT" is not a valid exit code - exiting with code 1
+90 error FetchError: request to https://registry.npmjs.org/@zifeiyu666%2ffooter failed, reason: connect ETIMEDOUT 104.16.2.35:443
+90 error     at ClientRequest.<anonymous> (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/minipass-fetch/lib/index.js:130:14)
+90 error     at ClientRequest.emit (node:events:517:28)
+90 error     at _destroy (node:_http_client:882:13)
+90 error     at onSocketNT (node:_http_client:902:5)
