@@ -1,6 +1,6 @@
 {
-  "name": "@zifeiyu666/header",
-  "version": "0.0.2",
+  "name": "header",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -22,9 +22,5 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "7eb70da8c28c0a5efff5a91333eb108cf8de98d1"
+  }
 }
