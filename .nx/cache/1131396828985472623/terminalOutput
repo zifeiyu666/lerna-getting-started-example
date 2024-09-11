@@ -1,7 +1,0 @@
-
-> header@0.0.0 build
-> rimraf dist && rollup --config
-
-[36m
-[1msrc/index.tsx[22m → [1mdist[22m...[39m
-[32mcreated [1mdist[22m in [1m81ms[22m[39m
