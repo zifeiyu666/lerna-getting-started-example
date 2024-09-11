@@ -10,7 +10,7 @@
     "nonProjectFiles": [
       {
         "file": ".gitignore",
-        "hash": "1506074105630320832"
+        "hash": "8510037461346576287"
       },
       {
         "file": ".npmrc",
@@ -29,95 +29,23 @@
         "hash": "10307142885639291195"
       },
       {
-        "file": "package-lock.json",
-        "hash": "16695871886014834518"
-      },
-      {
-        "file": "package.json",
-        "hash": "12131684886721361112"
-      },
-      {
         "file": "nx.json",
         "hash": "696142436754191486"
       },
       {
         "file": "output.json",
         "hash": "7883666696420624045"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "16695871886014834518"
+      },
+      {
+        "file": "package.json",
+        "hash": "12131684886721361112"
       }
     ],
     "projectFileMap": {
-      "remixapp": [
-        {
-          "file": "packages/remixapp/.eslintrc",
-          "hash": "16988127387794714891"
-        },
-        {
-          "file": "packages/remixapp/app/entry.client.tsx",
-          "hash": "12611342329477535116"
-        },
-        {
-          "file": "packages/remixapp/app/entry.server.tsx",
-          "hash": "1190730790936313240"
-        },
-        {
-          "file": "packages/remixapp/app/root.tsx",
-          "hash": "3865960150028357246"
-        },
-        {
-          "file": "packages/remixapp/app/routes/index.tsx",
-          "hash": "13095577589672270196"
-        },
-        {
-          "file": "packages/remixapp/jest.config.js",
-          "hash": "9105608488111214761"
-        },
-        {
-          "file": "packages/remixapp/package-lock.json",
-          "hash": "15198436464934572674"
-        },
-        {
-          "file": "packages/remixapp/package.json",
-          "hash": "7438459731829654568",
-          "deps": [
-            "npm:@remix-run/dev",
-            "npm:@remix-run/eslint-config",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:eslint",
-            "npm:typescript",
-            "npm:@types/jest",
-            "npm:jest",
-            "npm:ts-jest",
-            "npm:@remix-run/node",
-            "npm:@remix-run/react",
-            "npm:@remix-run/serve",
-            "npm:react",
-            "npm:react-dom",
-            "header",
-            "footer"
-          ]
-        },
-        {
-          "file": "packages/remixapp/public/favicon.ico",
-          "hash": "3730367829618743876"
-        },
-        {
-          "file": "packages/remixapp/remix.config.js",
-          "hash": "15955396084552921172"
-        },
-        {
-          "file": "packages/remixapp/remix.env.d.ts",
-          "hash": "13547913023474350511"
-        },
-        {
-          "file": "packages/remixapp/tests/example.spec.tsx",
-          "hash": "3975184989323073644"
-        },
-        {
-          "file": "packages/remixapp/tsconfig.json",
-          "hash": "14902678922836432892"
-        }
-      ],
       "header": [
         {
           "file": "packages/header/jest.config.js",
@@ -228,6 +156,78 @@
         {
           "file": "packages/footer/tsconfig.spec.json",
           "hash": "6512608057909581835"
+        }
+      ],
+      "remixapp": [
+        {
+          "file": "packages/remixapp/.eslintrc",
+          "hash": "16988127387794714891"
+        },
+        {
+          "file": "packages/remixapp/app/entry.client.tsx",
+          "hash": "12611342329477535116"
+        },
+        {
+          "file": "packages/remixapp/app/entry.server.tsx",
+          "hash": "1190730790936313240"
+        },
+        {
+          "file": "packages/remixapp/app/root.tsx",
+          "hash": "3865960150028357246"
+        },
+        {
+          "file": "packages/remixapp/app/routes/index.tsx",
+          "hash": "13095577589672270196"
+        },
+        {
+          "file": "packages/remixapp/jest.config.js",
+          "hash": "9105608488111214761"
+        },
+        {
+          "file": "packages/remixapp/package-lock.json",
+          "hash": "15198436464934572674"
+        },
+        {
+          "file": "packages/remixapp/package.json",
+          "hash": "7438459731829654568",
+          "deps": [
+            "npm:@remix-run/dev",
+            "npm:@remix-run/eslint-config",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:typescript",
+            "npm:@types/jest",
+            "npm:jest",
+            "npm:ts-jest",
+            "npm:@remix-run/node",
+            "npm:@remix-run/react",
+            "npm:@remix-run/serve",
+            "npm:react",
+            "npm:react-dom",
+            "header",
+            "footer"
+          ]
+        },
+        {
+          "file": "packages/remixapp/public/favicon.ico",
+          "hash": "3730367829618743876"
+        },
+        {
+          "file": "packages/remixapp/remix.config.js",
+          "hash": "15955396084552921172"
+        },
+        {
+          "file": "packages/remixapp/remix.env.d.ts",
+          "hash": "13547913023474350511"
+        },
+        {
+          "file": "packages/remixapp/tests/example.spec.tsx",
+          "hash": "3975184989323073644"
+        },
+        {
+          "file": "packages/remixapp/tsconfig.json",
+          "hash": "14902678922836432892"
         }
       ]
     }

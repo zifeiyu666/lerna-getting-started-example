@@ -140,3 +140,29 @@
 [NX Daemon Server] - 2024-09-11T08:34:38.197Z - [WATCHER]: Stopping the watcher for /Users/gymd/myStudy/cli-study/getting-started-example (sources)
 [NX Daemon Server] - 2024-09-11T08:34:38.197Z - [WATCHER]: Stopping the watcher for /Users/gymd/myStudy/cli-study/getting-started-example (outputs)
 [NX Daemon Server] - 2024-09-11T08:34:38.199Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-09-11T08:34:51.759Z - Started listening on: /var/folders/g2/mhbl2dx56w5b5yvw921q_zj00000gn/T/2dfd6ee17b3b584ec7e8/d.sock
+[NX Daemon Server] - 2024-09-11T08:34:51.760Z - [WATCHER]: Subscribed to changes within: /Users/gymd/myStudy/cli-study/getting-started-example (native)
+[NX Daemon Server] - 2024-09-11T08:34:51.765Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-11T08:34:51.766Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-11T08:34:51.766Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-11T08:34:51.767Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-09-11T08:34:51.821Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-11T08:34:51.865Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-11T08:34:51.865Z - [REQUEST]: 
+[NX Daemon Server] - 2024-09-11T08:34:51.865Z - [REQUEST]: 
+[NX Daemon Server] - 2024-09-11T08:34:51.869Z - Time taken for 'loadNxPlugins' 97.02199999988079ms
+[NX Daemon Server] - 2024-09-11T08:34:51.891Z - Time taken for 'build-project-configs' 13.679916992783546ms
+[NX Daemon Server] - 2024-09-11T08:34:51.920Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-09-11T08:34:51.921Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-09-11T08:34:51.922Z - Time taken for 'total for creating and serializing project graph' 153.7631670087576ms
+[NX Daemon Server] - 2024-09-11T08:34:51.923Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-09-11T08:34:51.923Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 154. Response time: 2.
+[NX Daemon Server] - 2024-09-11T08:34:51.927Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-09-11T08:34:51.927Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-09-11T08:34:51.927Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-09-11T08:34:54.030Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-11T08:36:16.757Z - [WATCHER]: .gitignore was modified
+[NX Daemon Server] - 2024-09-11T08:36:16.765Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-09-11T08:36:16.766Z - [WATCHER]: Stopping the watcher for /Users/gymd/myStudy/cli-study/getting-started-example (sources)
+[NX Daemon Server] - 2024-09-11T08:36:16.766Z - [WATCHER]: Stopping the watcher for /Users/gymd/myStudy/cli-study/getting-started-example (outputs)
+[NX Daemon Server] - 2024-09-11T08:36:16.770Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
