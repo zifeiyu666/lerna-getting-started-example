@@ -1,6 +1,6 @@
 {
   "name": "@zifeiyu666/footer",
-  "version": "0.0.5",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -23,5 +23,8 @@
   "devDependencies": {
     "rimraf": "^3.0.2"
   },
-  "gitHead": "b4d8fd601d49255e8d654d640eb0edc8f66235a6"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "61bcf4fb650a2ef118a45e6634de81708b7100d8"
 }
