@@ -9,3 +9,4 @@ packages/remixapp/public/build
 
 .nx/cache
 .nx/workspace-data
+.lerna-debug.log
