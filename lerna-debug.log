@@ -7,68 +7,18 @@
 1 notice cli v7.1.5
 2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
 3 verbose rootPath /Users/gymd/myStudy/cli-study/getting-started-example
-4 info current version 0.0.0
+4 info current version 0.0.2-alpha.0
 5 silly isAnythingCommitted
 6 verbose isAnythingCommitted 1
 7 silly getCurrentBranch
 8 verbose currentBranch main
 9 silly remoteBranchExists
 10 silly isBehindUpstream
-11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 7
-12 silly hasTags
-13 verbose hasTags true
-14 silly git-describe.sync "v0.0.5-11-g5594d7e" => {"lastTagName":"v0.0.5","lastVersion":"v0.0.5","refCount":"11","sha":"5594d7e","isDirty":false}
-15 info Looking for changed packages since v0.0.5
-16 silly checking diff packages/footer
-17 silly found diff in packages/footer/package-lock.json
-17 silly found diff in packages/footer/package.json
-18 verbose filtered diff [ 'packages/footer/package-lock.json', 'packages/footer/package.json' ]
-19 silly checking diff packages/header
-20 silly found diff in packages/header/package-lock.json
-20 silly found diff in packages/header/package.json
-20 silly found diff in packages/header/src/Header.tsx
-21 verbose filtered diff [
-21 verbose filtered diff   'packages/header/package-lock.json',
-21 verbose filtered diff   'packages/header/package.json',
-21 verbose filtered diff   'packages/header/src/Header.tsx'
-21 verbose filtered diff ]
-22 silly checking diff packages/remixapp
-23 silly found diff in packages/remixapp/package-lock.json
-23 silly found diff in packages/remixapp/package.json
-24 verbose filtered diff [
-24 verbose filtered diff   'packages/remixapp/package-lock.json',
-24 verbose filtered diff   'packages/remixapp/package.json'
-24 verbose filtered diff ]
-25 verbose updated footer
-26 verbose updated header
-27 verbose updated remixapp
-28 verbose git-describe undefined => "v0.0.5-11-g5594d7e"
-29 silly git-describe parsed => {"lastTagName":"v0.0.5","lastVersion":"v0.0.5","refCount":"11","sha":"5594d7e","isDirty":false}
-30 info execute Skipping releases
-31 silly lifecycle No script for "preversion" in "root", continuing
-32 silly lifecycle No script for "preversion" in "footer", continuing
-33 silly lifecycle No script for "preversion" in "header", continuing
-34 silly lifecycle No script for "version" in "footer", continuing
-35 silly lifecycle No script for "version" in "header", continuing
-36 verbose version Updating root package-lock.json
-37 silly lifecycle No script for "version" in "root", continuing
-38 silly gitAdd [
-38 silly gitAdd   'packages/footer/package.json',
-38 silly gitAdd   'packages/footer/package-lock.json',
-38 silly gitAdd   'packages/header/package.json',
-38 silly gitAdd   'packages/header/package-lock.json',
-38 silly gitAdd   'lerna.json',
-38 silly gitAdd   'package-lock.json'
-38 silly gitAdd ]
-39 silly gitCommit v0.0.1
-40 verbose git [ 'commit', '-m', 'v0.0.1' ]
-41 silly gitTag v0.0.1 git tag %s -m %s
-42 verbose git [ 'tag', 'v0.0.1', '-m', 'v0.0.1' ]
-43 error Error: Command failed with exit code 128: git tag v0.0.1 -m v0.0.1
-43 error fatal: tag 'v0.0.1' already exists
-43 error     at makeError (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/execa/lib/error.js:59:11)
-43 error     at handlePromise (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/execa/index.js:114:26)
-43 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-43 error     at async VersionCommand.gitCommitAndTagVersion (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:8370:9)
-43 error     at async VersionCommand.commitAndTagUpdates (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:8340:18)
-43 error     at async Promise.all (index 0)
+11 error Error: Command failed with exit code 1: git remote update
+11 error fatal: unable to access 'https://github.com/zifeiyu666/lerna-getting-started-example.git/': Failure when receiving data from the peer
+11 error     at makeError (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/execa/lib/error.js:59:11)
+11 error     at module.exports.sync (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/execa/index.js:186:17)
+11 error     at Object.execSync (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/@lerna/child-process/index.js:39:16)
+11 error     at updateRemote (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:7613:18)
+11 error     at isBehindUpstream (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:7603:3)
+11 error     at VersionCommand.initialize (/Users/gymd/myStudy/cli-study/getting-started-example/node_modules/lerna/dist/index.js:7913:57)
